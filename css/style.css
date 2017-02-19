@@ -149,4 +149,8 @@ body {
     padding: 1em;
     color: #FEEB35;
   }
+
+  .margin-right {
+    margin-right: 0rem;
+  }
 }
