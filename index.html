@@ -2,7 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Ony-France</title>
+    <title>öny-France</title>
+    <meta name="description" content="SS17-COMING SOON">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="robots" content="index,follow">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <!-- Kube CSS -->
     <link rel="stylesheet" href="css/kube.css">
@@ -30,8 +33,8 @@
         </div>
       </div>
 
-      <div class="logo">
-        <h1>öny</h1>
+      <div class="wrapper-logo">
+        <img src="images/logo-ony.png" alt="öny-France" id="logo">
       </div>
       </div>
     </div>
@@ -39,6 +42,22 @@
     <!-- Kube JS + jQuery are used for some functionality, but are not required for the basic setup -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/kube.js"></script>
+    <script>
+      $(document).ready(function () {
+
+        var img = $("#logo");
+
+        var $window = $(window).resize(function(){
+            var width = $window.width();
+
+            if (width <= 600) {
+                img.attr("src","images/logo-ony-yellow.png");
+            } else {
+                img.attr("src","images/logo-ony.png");
+            }
+        });
+      });
+    </script>
 
   </body>
 </html>

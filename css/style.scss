@@ -78,17 +78,12 @@ body {
       color: #003b73;
     }
   }
-  .logo {
+  .wrapper-logo {
     text-align: right;
     position: absolute;
     bottom: 0;
     right: 0;
     padding: 1.6em 2em 1.6em 0;
-    h1 {
-      font-size: 3.5em;
-      color: #003b73;
-      letter-spacing: .18em;
-    }
   }
 }
 
@@ -111,14 +106,14 @@ body {
       position: absolute;
       left: 0;
       bottom: 0;
-      padding: 1.6em 0 1.6em 2em;
+      padding: 1.6em 0 1.3em 2em;
       a {
         color: #ffec30;
       }
     }
-    .logo {
-      h1 {
-        color: #ffec30;
+    .wrapper-logo {
+      padding: 1.6em 2em 0 0;
+      img {
       }
     }
   }
