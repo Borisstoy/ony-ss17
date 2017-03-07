@@ -44,20 +44,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/kube.js"></script>
     <script>
-      $(document).ready(function () {
+      function mobileImg("#logo", "images/logo-ony.png") {
+        var width = window.innerWidth; // No need for jQuery here, raw JS can do this
 
-        var img = $("#logo");
-
-        var $window = $(window).resize(function(){
-            var width = $window.width();
-
-            if (width <= 600) {
-                img.attr("src","images/logo-ony-yellow.png");
-            } else {
-                img.attr("src","images/logo-ony.png");
-            }
-        });
-      });
+        if(width < 600) {
+            $(targetClass).attr("src", "images/logo-ony-yellow.png");
+        }
+      }
+      $(document).ready(mobileImg("#logo", "images/logo-ony.png"));
+      $(window).resize(mobileImg("#logo", "images/logo-ony.png"));
     </script>
 
   </body>
